@@ -12,7 +12,7 @@ function textAnalyzer(){
 }
 userInput.addEventListener('keyup', textAnalyzer);
 
-const resetButton = document.querySelector('button');
+const resetButton = document.getElementById('resetButton');
 function reset(){
   userInput.value = '';
   document.querySelectorAll('li')[0].innerHTML =`Palabras: 0`;

@@ -30,7 +30,7 @@ const analyzer = {
     for (let i = 0; i < words.length; i++) {
       sum += words[i].length;
     }
-    return (sum / words.length).toFixed(2);
+    return Math.round((sum / words.length) * 100) / 100
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
